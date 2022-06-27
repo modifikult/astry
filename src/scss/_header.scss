@@ -1,0 +1,33 @@
+.header {
+  height: 85px;
+  background: #FCFAFF;
+  border-bottom: 1px solid #F6F0FC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  img {
+    width: 135px;
+    height: 47px;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .header {
+    height: 55px;
+  }
+  .header-logo img {
+    width: 80px;
+    height: 28px;
+  }
+}

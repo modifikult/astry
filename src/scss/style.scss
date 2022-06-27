@@ -1,0 +1,96 @@
+// reset-styles
+@import "reset-styles";
+
+// fonts
+@import 'fonts';
+
+$purple: #401D73;
+$text: #6C5393;
+$text-non-active: #B0A1C2;
+$main-first: #AC49E1;
+$main-second: #5D3AE2;
+$light-pink: #FCFAFF;
+$light-pink-non-active: #F6F0FC;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: $text;
+}
+
+main {
+  padding-top: 85px;
+}
+
+.container {
+  max-width: 550px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: $purple;
+}
+
+.btn-def {
+  background: $main-second;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-dis {
+  background: $light-pink-non-active;
+  border-radius: 10px;
+  color: $text-non-active;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion.acc-active .acc-content {
+  padding-top: 20px;
+}
+
+.accordion .acc-content, .accordion .acc-title img {
+  transition: all .4s ease;
+}
+
+.accordion.acc-active .acc-title img {
+  transform-origin: center;
+  transform: rotate(180deg);
+}
+
+.acc-content {
+  height: 0;
+  overflow: hidden;
+}
+
+// header
+@import "header";
+
+// footer
+@import "footer";
+
+// sections
+@import "reports-section";
+@import "report-self-section";
+
+@media screen and (max-width: 549px) {
+  main {
+    padding-top: 55px;
+  }
+}
+
